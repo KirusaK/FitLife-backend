@@ -8,46 +8,7 @@
     <link rel="icon" type="image/svg" href="/FitLife/img/logo.svg" />
   </head>
   <body>
-    <header class="header">
-      <div class="container">
-        <div class="header__container">
-          <nav class="header__nav">
-            <a href="index.html">
-              <img
-                src="/FitLife/img/fitlife_logo.svg"
-                alt="Логотип спортзала FitLife"
-              />
-            </a>
-            <ul class="header__menu">
-              <li>
-                <a class="header__link header__link-orange" href="index.html"
-                  >Strona główna
-                </a>
-              </li>
-              <li>
-                <a class="header__link" href="pages/uslugi.html">Usługi</a>
-              </li>
-              <li>
-                <a class="header__link" href="pages/abonamenty.html"
-                  >Abonamenty</a
-                >
-              </li>
-              <li>
-                <a class="header__link" href="pages/rezerwacja.html"
-                  >Rezerwacja</a
-                >
-              </li>
-              <li>
-                <a class="header__link" href="pages/kalkulator.html"
-                  >Kalkulator Kcal & BZHU</a
-                >
-              </li>
-            </ul>
-            <a class="header__button" href="pages/zaloguj.html">Zaloguj się</a>
-          </nav>
-        </div>
-      </div>
-    </header>
+    <?php require_once "blocks/header.php" ?>
     <main>
       <section class="hero-section">
         <div class="container">
@@ -222,46 +183,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
-      <div class="container">
-        <hr />
-        <div class="footer-container__info">
-          <div class="footer-logo">
-            <img src="img/fitlife_logo.svg" alt="Логотип спортзала FitLife" />
-          </div>
-          <div class="footer-contakt">
-            <h1 class="footer-contakt__title">Kontakt</h1>
-            <div class="footer-contakt__email">
-              <img src="img/mawpa.svg" alt="Значек собачки электронной почты" />
-              <h3 class="footer-contakt__email">warszawa@fitlife.pl</h3>
-            </div>
-            <div class="footer-contakt__tel">
-              <img src="img/phone.svg" alt="Значек телефона" />
-              <h3 class="footer-contact__telefon">+48 512 345 678</h3>
-            </div>
-          </div>
-          <div class="footer-adres">
-            <h1 class="footer-adres__title">Adres</h1>
-            <div class="footer-adres__ul">
-              <img src="img/map.svg" alt="Значек метки на карте" />
-              <h3>ul. Jana Pawła II 45, 00-175 Warszawa</h3>
-            </div>
-          </div>
-        </div>
-        <div class="footer-container__soc">
-          <div class="footer-container__rok">
-            <h1>&copy; 2025 FitLife.</h1>
-          </div>
-          <div class="footer-container__socseti">
-            <a href="#"
-              ><img src="img/instagram.svg" alt="Значек Instagram"
-            /></a>
-            <a href="#"><img src="img/twitter.svg" alt="Значек Twitter" /></a>
-            <a href="#"><img src="img/facebook.svg" alt="Значек Facebook" /></a>
-          </div>
-        </div>
-      </div>
-    </footer>
+    <?php require_once "blocks/footer.php" ?>
   </body>
   <script src="js/main.js"></script>
 </html>
