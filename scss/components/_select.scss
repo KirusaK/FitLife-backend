@@ -1,0 +1,62 @@
+.select {
+  position: relative;
+  width: 200px;
+  font-family: inherit;
+}
+
+.select-input {
+  padding: 12px 14px;
+  height: 60px;
+  border: 1px solid black;
+  border-radius: 16px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-button);
+}
+
+.select-text {
+  padding-top: 32px;
+}
+
+.arrow {
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+  transform: rotate(45deg);
+  transition: transform 0.2s;
+}
+
+.select.open .arrow {
+  transform: rotate(-135deg);
+}
+
+.select-list {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  right: 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: white;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: none;
+  z-index: 10;
+}
+
+.select.open .select-list {
+  display: block;
+}
+
+.select-list li {
+  padding: 10px 14px;
+  cursor: pointer;
+}
+
+.select-list li:hover {
+  background: #f0f0f0;
+}

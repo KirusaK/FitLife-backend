@@ -1,0 +1,107 @@
+.licznik-section {
+  background-color: var(--color-primary-normal);
+  padding: 50px;
+
+  &__container {
+    background-color: var(--color-primary-dark-gray);
+    width: 1200px;
+    height: 866px;
+    margin: 0 auto;
+    border: 1px solid black;
+    border-radius: 16px;
+  }
+
+  &__pierwsza {
+    padding-bottom: 32px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 80px 0 80px;
+  }
+
+  &__item h3 {
+    font-family: Poppins, sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    padding-bottom: 30px;
+  }
+
+  &__item input {
+    width: 150px;
+    height: 61px;
+    border: 1px solid black;
+    border-radius: 16px;
+    background-color: var(--color-button);
+    padding-left: 25px;
+    color: white;
+    cursor: pointer;
+  }
+
+  &__item input::placeholder {
+    color: white;
+  }
+
+  &__droga {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    gap: 110px;
+  }
+
+  &__sum,
+  &__info {
+    background-color: var(--color-button);
+    border: 1px solid black;
+    border-radius: 16px;
+  }
+
+  &__sum {
+    width: 400px;
+    height: 300px;
+  }
+
+  &__info {
+    width: 445px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__info {
+    font-family: Poppins, sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+  }
+
+  &__info p:not(:last-child) {
+    padding-bottom: 20px;
+  }
+
+  &__trzecia {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__btn {
+    margin-top: 49px;
+    width: 400px;
+    height: 70px;
+    background-color: var(--color-brand-orange);
+    border: none;
+    border-radius: 16px;
+    color: white;
+    font-family: Poppins, sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    transition: transform 0.5s ease;
+  }
+
+  &__btn:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+}

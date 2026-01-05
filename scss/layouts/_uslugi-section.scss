@@ -1,0 +1,54 @@
+.uslugi-section {
+  background-color: var(--color-primary-normal);
+  padding: 0 95px 0 95px;
+
+  &__title {
+    padding: 32px 0 16px 0;
+    font-size: 40px;
+    font-weight: 600;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: start;
+    gap: 24px;
+    padding: 16px 0 32px 0;
+  }
+
+  &__btn {
+    background-color: var(--color-primary-dark-gray);
+    width: 300px;
+    height: 239px;
+    color: white;
+    border: 1px solid black;
+    border-radius: 16px;
+    transition: transform 0.5s ease;
+  }
+
+  &__btn:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+
+  &__btn img {
+    width: 100px;
+    height: 100px;
+    margin: 20px 0 0 0;
+  }
+
+  &__btn h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 10px 0 10px 0;
+  }
+
+  &__btn p {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 28px auto;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    width: 198px;
+    height: 39px;
+  }
+}

@@ -1,0 +1,72 @@
+.data-section {
+  background-color: var(--color-primary-normal);
+
+  &__title {
+    display: flex;
+    justify-content: center;
+    font-family: Poppins, sans-serif;
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+
+  &__check {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+    gap: 35px;
+  }
+
+  &__item {
+    background-color: var(--color-primary-dark-gray);
+    width: 500px;
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 16px;
+  }
+
+  &__item h3 {
+    font-family: Poppins, sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    padding: 25px 40px;
+  }
+
+  &__btn {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0 auto;
+    width: 390px;
+    height: 76px;
+  }
+
+  &__btn:hover {
+    cursor: pointer;
+  }
+
+  &__but {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 32px;
+  }
+
+  &__button {
+    width: 400px;
+    height: 70px;
+    background-color: var(--color-brand-orange);
+    border: none;
+    border-radius: 16px;
+    color: white;
+    font-family: Popins, sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    transition: transform 0.5s ease;
+  }
+
+  &__button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,17 @@
+.button-section {
+  width: 302px;
+  height: 88px;
+  color: white;
+  border: 3px solid white;
+  border-radius: 16px;
+  background-color: transparent;
+  transition: transform 0.3s ease;
+  font-family: Poppins, sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.button-section:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}

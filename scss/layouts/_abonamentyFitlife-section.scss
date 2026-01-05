@@ -1,0 +1,31 @@
+.abonamentyFitlife-section {
+  height: 800px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../img/hero-uslugi.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  display: flex;
+  align-items: center;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    font-family: Poppins, sans-serif;
+    font-size: 72px;
+    font-weight: 600;
+    padding-bottom: 25px;
+  }
+
+  &__text {
+    font-family: Poppins, sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    padding-bottom: 103px;
+  }
+}

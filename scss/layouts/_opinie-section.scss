@@ -1,0 +1,73 @@
+.opinie-section {
+  background-color: var(--color-primary-normal);
+  padding: 32px 0 32px 95px;
+
+  &__title {
+    padding: 0 0 32px 0;
+    font-size: 40px;
+    font-weight: 600;
+  }
+
+  &__list {
+    display: flex;
+    gap: 35px;
+  }
+
+  &__btn {
+    background-color: var(--color-primary-dark-gray);
+    border: 1px solid black;
+    border-radius: 16px;
+    color: white;
+    width: 401px;
+    height: 250px;
+    transition: transform 0.5s ease;
+  }
+
+  &__btn:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+
+  &__info {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  &__info img {
+    width: 100px;
+    height: 100px;
+    transform: translateY(-20px);
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__block h3 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  &__star {
+    width: calc(30px * 5);
+    height: 30px;
+    background-image: url("../img/gwiazdka.svg");
+    background-repeat: repeat-x;
+    background-size: 30px 30px;
+  }
+
+  &__text {
+    margin: 0 auto;
+    text-align: start;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    width: 251px;
+  }
+}

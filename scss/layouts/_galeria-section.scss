@@ -1,0 +1,54 @@
+.galeria-section {
+  background-color: var(--color-primary-normal);
+  padding: 0 0 0 95px;
+
+  &__title {
+    padding: 0 0 37px 0;
+  }
+
+  &__list {
+    display: flex;
+    gap: 24px;
+  }
+
+  &__btn {
+    width: 300px;
+    height: 239px;
+    border: 1px solid black;
+    border-radius: 16px;
+    transition: transform 0.5s ease;
+  }
+
+  &__btn:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+
+  &__frame1 {
+    background-image: url("../img/frame1-photo.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center top;
+  }
+
+  &__frame2 {
+    background-image: url("../img/frame2-photo.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center top;
+  }
+
+  &__frame3 {
+    background-image: url("../img/frame3-photo.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center top;
+  }
+
+  &__frame4 {
+    background-image: url("../img/frame4-photo.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center top;
+  }
+}
