@@ -3,6 +3,8 @@
 @import './utils/variables';
 
 @import './components/button';
+@import './components/buttonicon';
+@import './components/dropdown';
 @import './components/select';
 
 @import './layouts/_abonamentyFitlife-section';
@@ -21,6 +23,7 @@
 @import './layouts/_opinie-section';
 @import './layouts/price-section';
 @import './layouts/rezerwacja-section';
+@import './layouts/usermenu';
 @import './layouts/_uslugi-section';
 @import './layouts/naszeUslugi-section';
 @import './layouts/uslugiFitlife-section';

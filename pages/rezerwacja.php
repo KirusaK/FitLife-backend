@@ -72,5 +72,7 @@
       </section>
     </main>
     <?php require_once "../blocks/footer-pages.php" ?>
+    <script src="/FITLIFE-BACKEND/js/konto.js"></script>
+    <script src="/FITLIFE-BACKEND/js/modal.js"></script>
   </body>
 </html>

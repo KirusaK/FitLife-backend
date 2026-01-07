@@ -184,6 +184,7 @@
       </section>
     </main>
     <?php require_once "blocks/footer.php" ?>
+    <script src="/FITLIFE-BACKEND/js/konto.js"></script>
+    <script src="/FITLIFE-BACKEND/js/modal.js"></script>
   </body>
-  <script src="js/main.js"></script>
 </html>

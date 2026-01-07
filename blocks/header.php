@@ -1,8 +1,14 @@
+<?php
+session_start();
+$current = $_SERVER['REQUEST_URI'];
+?>
+
+
 <header class="header">
       <div class="container">
         <div class="header__container">
           <nav class="header__nav">
-            <a href="index.html">
+            <a href="/FITLIFE-BACKEND/index.php">
               <img
                 src="/FitLife/img/fitlife_logo.svg"
                 alt="Логотип спортзала FitLife"
@@ -10,30 +16,47 @@
             </a>
             <ul class="header__menu">
               <li>
-                <a class="header__link header__link-orange" href="../index.html"
+                <a class="header__link header__link-orange" href="/FITLIFE-BACKEND/index.php"
                   >Strona główna
                 </a>
               </li>
               <li>
-                <a class="header__link" href="../pages/uslugi.html">Usługi</a>
+                <a class="header__link" href="/FITLIFE-BACKEND/pages/uslugi.php">Usługi</a>
               </li>
               <li>
-                <a class="header__link" href="../pages/abonamenty.html"
+                <a class="header__link" href="/FITLIFE-BACKEND/pages/abonamenty.php"
                   >Abonamenty</a
                 >
               </li>
               <li>
-                <a class="header__link" href="../pages/rezerwacja.html"
+                <a class="header__link" href="/FITLIFE-BACKEND/pages/rezerwacja.php"
                   >Rezerwacja</a
                 >
               </li>
               <li>
-                <a class="header__link" href="../pages/kalkulator.html"
+                <a class="header__link" href="/FITLIFE-BACKEND/pages/kalkulator.php"
                   >Kalkulator Kcal & BZHU</a
                 >
               </li>
             </ul>
-            <a class="header__button" href="../pages/zaloguj.html">Zaloguj się</a>
+            <?php if (isset($_SESSION['user_id'])): ?>
+              <div class="user-menu">
+                <button class="user-menu__btn" id="userMenuBtn">
+                  <svg class="user-menu__icon" width="100" height="100">
+                    <use href="/FITLIFE-BACKEND/img/icons.svg#icon-user-tie"></use>
+                  </svg>
+                </button>
+
+                <div class="user-menu__dropdown" id="userMenuDropdown">
+                  <a href="/FITLIFE-BACKEND/pages/profile.php">Profil</a>
+                  <a href="/FITLIFE-BACKEND/auth/logout.php">Wyloguj się</a>
+                </div>
+              </div>
+            <?php else: ?>
+              <a class="header__button" href="/FITLIFE-BACKEND/pages/zaloguj.php">
+                Zaloguj się
+              </a>
+            <?php endif; ?>
           </nav>
         </div>
       </div>
