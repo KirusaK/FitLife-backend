@@ -48,7 +48,7 @@ $current = $_SERVER['REQUEST_URI'];
                 </button>
 
                 <div class="user-menu__dropdown" id="userMenuDropdown">
-                  <a href="/FITLIFE-BACKEND/pages/profile.php">Profil</a>
+                  <a href="/FITLIFE-BACKEND/pages/profil.php">Profil</a>
                   <a href="/FITLIFE-BACKEND/auth/logout.php">Wyloguj się</a>
                 </div>
               </div>
