@@ -46,6 +46,11 @@
     cursor: pointer;
   }
 
+  &__btn input {
+    width: 390px;
+    height: 76px;
+  }
+
   &__but {
     display: flex;
     justify-content: center;

@@ -1,0 +1,82 @@
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 650px;
+  height: 600px;
+  background-color: var(--color-primary-dark-gray);
+  border: 1px solid black;
+  border-radius: 16px;
+  transform: translate(-50%, -50%);
+
+  display: none;
+  justify-content: center;
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &-content h1 {
+    font-family: Poppins, sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 25px;
+  }
+
+  &-input {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &-input__name input,
+  &-input__phone input {
+    width: 350px;
+    height: 50px;
+    margin-bottom: 25px;
+    background-color: var(--color-button);
+    border: 1px solid black;
+    border-radius: 16px;
+    padding: 0 25px;
+    color: white;
+  }
+
+  &-input__name input::placeholder,
+  &-input__phone input::placeholder {
+    color: white;
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  &-button__submit,
+  &-button__btn {
+    margin-bottom: 25px;
+    width: 350px;
+    height: 50px;
+  }
+
+  &-button__button {
+    width: 350px;
+    height: 50px;
+    background-color: var(--color-brand-orange);
+    border: none;
+    border-radius: 16px;
+    color: white;
+    font-family: Poppins, sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    transition: transform 0.5s ease;
+  }
+
+  &-button__button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+}

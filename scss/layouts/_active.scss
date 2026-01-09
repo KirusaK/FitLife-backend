@@ -1,0 +1,9 @@
+.uslugiWybor-section__btn {
+  transition: all 0.3s ease;
+}
+
+.uslugiWybor-section__btn.active {
+  border: 2px solid var(--color-brand-orange);
+  box-shadow: 0 0 20px rgba(255, 140, 0, 0.6);
+  transform: scale(1.05);
+}

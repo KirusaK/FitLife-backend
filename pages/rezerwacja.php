@@ -22,21 +22,21 @@
           <div class="uslugiWybor-section__container">
             <ul class="uslugiWybor-section__list">
               <li class="uslugiWybor-section__item">
-                <button class="uslugiWybor-section__btn">
-                  <img src="../img/masaz.svg" alt="Логотип Masaż" />
+                <button class="uslugiWybor-section__btn" data-service="Masaz">
+                  <img src="../img/masaz.svg" alt="Логотип Masaz" />
                   <h3>Masaż</h3>
                   <p>Zrelaksuj ciało po treningu.</p>
                 </button>
               </li>
               <li class="uslugiWybor-section__item">
-                <button class="uslugiWybor-section__btn">
+                <button class="uslugiWybor-section__btn" data-service="Sauna">
                   <img src="../img/sauna.svg" alt="Логотип Sauna" />
                   <h3>Sauna</h3>
                   <p>Zadbaj o regenerację</p>
                 </button>
               </li>
               <li class="uslugiWybor-section__item">
-                <button class="uslugiWybor-section__btn">
+                <button class="uslugiWybor-section__btn" data-service="Yoga">
                   <img src="../img/yoga.svg" alt="Логотип Yoga" />
                   <h3>Yoga</h3>
                   <p>Odnajdz równowagę</p>
@@ -53,17 +53,19 @@
             <div class="data-section__check">
               <div class="data-section__item">
                 <h3 class="data-section__text">Data</h3>
-                <button class="data-section__btn">
-                  <img src="../img/calendar.svg" alt="Изображение календаря" />
-                </button>
+                <div class="data-section__btn">
+                  <input type="date" id="reservationDate">
+                </div>
               </div>
               <div class="data-section__item">
                 <h3 class="data-section__text">Godzina</h3>
-                <button class="data-section__btn">
-                  <img src="../img/time.svg" alt="Изображение часов" />
-                </button>
+                <div class="data-section__btn">
+                  <input type="time" id="reservationTime">
+                </div>
               </div>
             </div>
+            <input type="hidden" id="selectedService" name="service">
+
             <div class="data-section__but">
               <button class="data-section__button">Zarezerwuj teraz</button>
             </div>
@@ -74,5 +76,6 @@
     <?php require_once "../blocks/footer-pages.php" ?>
     <script src="/FITLIFE-BACKEND/js/konto.js"></script>
     <script src="/FITLIFE-BACKEND/js/modal.js"></script>
+    <script src="/FITLIFE-BACKEND/js/rezerwacja.js"></script>
   </body>
 </html>
