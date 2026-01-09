@@ -43,7 +43,7 @@
                   </div>
                 </div>
                 <div class="price-section__button">
-                  <button class="price-section__btn">Kup teraz</button>
+                  <button class="price-section__btn" data-plan="standart">Kup teraz</button>
                 </div>
               </li>
               <li class="price-section__item">
@@ -64,7 +64,7 @@
                   </div>
                 </div>
                 <div class="price-section__button">
-                  <button class="price-section__btn">Kup teraz</button>
+                  <button class="price-section__btn" data-plan="premium">Kup teraz</button>
                 </div>
               </li>
               <li class="price-section__item">
@@ -85,7 +85,7 @@
                   </div>
                 </div>
                 <div class="price-section__button">
-                  <button class="price-section__btn">Kup teraz</button>
+                  <button class="price-section__btn" data-plan="vip">Kup teraz</button>
                 </div>
               </li>
             </ul>
@@ -98,21 +98,33 @@
             <h2 class="dlugosc-section__title">Wybierz długość abonamentu</h2>
             <ul class="dlugosc-section__list">
               <li class="dlugosc-section__item">
-                <button class="dlugosc-section__btn">1 miesiąc</button>
+                <button class="dlugosc-section__btn" data-duration="1">1 miesiąc</button>
               </li>
               <li class="dlugosc-section__item">
-                <button class="dlugosc-section__btn">3 miesiące</button>
+                <button class="dlugosc-section__btn" data-duration="3">3 miesiące</button>
               </li>
               <li class="dlugosc-section__item">
-                <button class="dlugosc-section__btn">12 miesiący</button>
+                <button class="dlugosc-section__btn" data-duration="12">12 miesiący</button>
               </li>
             </ul>
           </div>
         </div>
       </section>
     </main>
+
+    <div class="modal-section__abonamenty" id="abonamentModal">
+      <div class="modal-content">
+        <h2>Dziękujemy za zakup</h2>
+        <button id="closeAbonamentModal" class="modal__btn">
+          OK
+        </button>
+      </div>
+    </div>
+
+
     <?php require_once "../blocks/footer-pages.php" ?>
     <script src="/FITLIFE-BACKEND/js/konto.js"></script>
     <script src="/FITLIFE-BACKEND/js/modal.js"></script>
+    <script src="/FITLIFE-BACKEND/js/abonamenty.js"></script>
   </body>
 </html>
