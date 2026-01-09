@@ -61,9 +61,9 @@
             <h1 class="zarezerwuj-section__title">
               Zarezerwuj swoją pierwszą wizytę już dziś!
             </h1>
-            <button type="button" class="zarezerwuj-section__btn">
+            <a class="zarezerwuj-section__btn" href="/FITLIFE-BACKEND/pages/rezerwacja.php">
               Zarezerwuj teraz
-            </button>
+            </a>
           </div>
         </div>
       </section>

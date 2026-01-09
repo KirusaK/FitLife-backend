@@ -18,9 +18,9 @@
           <p class="hero-section__text">
             Dołącz do nas i rozpocznij swoją drogę do lepszej formy już dziś.
           </p>
-          <button class="hero-section__button" type="button">
+          <a class="hero-section__button" href="/FITLIFE-BACKEND/pages/rezerwacja.php">
             Zarezerwuj teraz
-          </button>
+          </a>
         </div>
       </section>
       <section class="uslugi-section">
@@ -96,9 +96,9 @@
         <div class="container">
           <div class="dolacz-section__fitlife">
             <h1 class="dolacz-section__title">Dołącz do FitLife już dziś!</h1>
-            <button class="dolacz-section__btn" type="button">
+            <a class="dolacz-section__btn" href="/FITLIFE-BACKEND/pages/abonamenty.php">
               Kup abonament
-            </button>
+            </a>
           </div>
         </div>
       </section>

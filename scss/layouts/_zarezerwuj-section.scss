@@ -19,6 +19,9 @@
   }
 
   &__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 342px;
     height: 100px;
     background-color: var(--color_button-gray);

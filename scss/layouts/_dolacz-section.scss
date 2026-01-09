@@ -21,6 +21,9 @@
   }
 
   &__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--color_button-gray);
     width: 300px;
     height: 70px;

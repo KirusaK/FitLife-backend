@@ -27,30 +27,42 @@
               <ul class="licznik-section__list">
                 <li class="licznik-section__item">
                   <h3>Waga</h3>
-                  <input type="text" placeholder="kg" />
+                  <input type="number" placeholder="kg" id="weight"/>
                 </li>
                 <li class="licznik-section__item">
                   <h3>Wzrost</h3>
-                  <input type="text" placeholder="cm" />
+                  <input type="number" placeholder="cm" id="height"/>
                 </li>
                 <li class="licznik-section__item">
                   <h3>Wiek</h3>
-                  <input type="text" placeholder="lata" />
+                  <input type="number" placeholder="lata" id="age"/>
                 </li>
                 <li class="licznik-section__item">
                   <h3>Poziom aktywności</h3>
-                  <div class="select">
+                  <div class="select" data-type="activity">
                     <div class="select-input">
-                      <span></span>
+                      <span>Aktywności</span>
                       <div class="arrow"></div>
                     </div>
+                    <ul class="select-dropdown">
+                      <li data-value="1.2">Siedzący tryb życia (1.2)</li>
+                      <li data-value="1.3">Ćwiczenia 1–3 razy w tygodniu (1.3)</li>
+                      <li data-value="1.6">Ćwiczenia 3–5 razy w tygodniu (1.6)</li>
+                      <li data-value="1.7">Codzienne treningi (1.7)</li>
+                      <li data-value="1.9">Treningi 2x dziennie (1.9)</li>
+                    </ul>
                   </div>
                   <h3 class="select-text">Wybierz swój cel</h3>
-                  <div class="select">
+                  <div class="select" data-type="goal">
                     <div class="select-input">
-                      <span></span>
+                      <span>Cel</span>
                       <div class="arrow"></div>
                     </div>
+                    <ul class="select-dropdown__cel">
+                      <li data-value="-300">Redukcja</li>
+                      <li data-value="0">Utrzymanie</li>
+                      <li data-value="300">Masa</li>
+                    </ul>
                   </div>
                 </li>
               </ul>
@@ -107,5 +119,6 @@
     <?php require_once "../blocks/footer-pages.php" ?>
     <script src="/FITLIFE-BACKEND/js/konto.js"></script>
     <script src="/FITLIFE-BACKEND/js/modal.js"></script>
+    <script src="/FITLIFE-BACKEND/js/kalkulator.js"></script>
   </body>
 </html>

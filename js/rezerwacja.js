@@ -1,4 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
+  console.log('rezerwacja.js loaded');
+
   let selectedService = null;
 
   const serviceButtons = document.querySelectorAll('.uslugiWybor-section__btn');
@@ -7,23 +9,35 @@ document.addEventListener('DOMContentLoaded', () => {
   const reserveBtn = document.querySelector('.data-section__button');
   const hiddenInput = document.getElementById('selectedService');
 
+  console.log('serviceButtons:', serviceButtons.length);
+
+  if (!reserveBtn) {
+    console.error('Nie znaleziono przycisku rezerwacji');
+    return;
+  }
+
   serviceButtons.forEach(btn => {
     btn.addEventListener('click', () => {
       serviceButtons.forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
+
       selectedService = btn.dataset.service;
       hiddenInput.value = selectedService;
+
+      console.log('Wybrano usługę:', selectedService);
     });
   });
 
-  if (!selectedService) {
-    alert('Wybierz usługę');
-    return;
-  }
-
   reserveBtn.addEventListener('click', async () => {
-    if (!selectedService || !dateInput.value || !timeInput.value) {
-      alert('Wybierz usługę, datę i godzinę');
+    console.log('Kliknięto rezerwuj');
+
+    if (!selectedService) {
+      alert('Wybierz usługę');
+      return;
+    }
+
+    if (!dateInput.value || !timeInput.value) {
+      alert('Wybierz datę i godzinę');
       return;
     }
 
